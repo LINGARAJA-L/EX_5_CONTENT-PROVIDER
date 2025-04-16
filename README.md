@@ -1,4 +1,3 @@
-# Date:12-04-2025
 EX:NO:05--Implement an application to display the Contact Details Using Content Provider
 ## AIM:
 
