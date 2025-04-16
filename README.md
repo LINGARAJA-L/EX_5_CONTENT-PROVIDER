@@ -1,4 +1,4 @@
-EX:NO:05--Implement an application to display the Contact Details Using Content Provider
+### EX:NO:05--Implement an application to display the Contact Details Using Content Provider
 ## AIM:
 
 To create your own content providers to get contacts details using Android Studio.
