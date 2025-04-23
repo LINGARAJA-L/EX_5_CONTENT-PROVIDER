@@ -1,4 +1,7 @@
-### EX:NO:05--Implement an application to display the Contact Details Using Content Provider
+
+# Ex.No:5 Create Your Own Content Providers to get Contacts details.
+
+
 ## AIM:
 
 To create your own content providers to get contacts details using Android Studio.
@@ -27,11 +30,11 @@ Step 7: Save and run the application.
 ```
 /*
 Program to print the contact name and phone number using content providers.
-Developed by: LINGARAJA L
-Registeration Number :212222040086
+Developed by:LINGARAJA L
+Registeration Number :212222220086
 */
 ```
-### Mainactivity.java:
+## Main Code
 ```
 package com.example.ex5;
 import android.support.v7.app.AppCompatActivity;
@@ -93,8 +96,9 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Total Count of Contacts: "+count);}
 }
 ```
-### Activitymain.XML:
-```<?xml version="1.0" encoding="utf-8"?>
+## Activity.XML
+```
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -113,11 +117,43 @@ public class MainActivity extends AppCompatActivity {
 
 </RelativeLayout>
 ```
+## AndroidMainfest.XML:
+```
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ex5">
 
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ex5"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>![Screenshot 2024-09-17 194637](https://github.com/user-attachments/assets/3e17ead9-eb04-43f3-b6e5-10ddd1dae911)
+```
 ## OUTPUT
 
-<img src="https://github.com/user-attachments/assets/b898a382-644e-4f71-9715-a48ea6986496" width=200>
-<img src="https://github.com/user-attachments/assets/0ca689d7-e8ec-4e50-90f9-93318bef48d9" width=200>
+![{391913FB-961C-4CCD-96EA-DCBE55E224F8}](https://github.com/user-attachments/assets/4c1b2ae2-515f-4046-aa2f-1bcc2c6951d5)
+
+![Screenshot 2025-04-16 112709](https://github.com/user-attachments/assets/aa853c45-4e54-4d64-91b8-04dce9e10721)
+
+
 
 ## RESULT
 Thus a Simple Android Application create your own content providers to get contacts details using Android Studio is developed and executed successfully.
